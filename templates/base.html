@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>GO14 - Go for growth</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            body { padding-top: 70px; }
+        </style>
+    </head>
+    <body>   
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                       <img src="/static/logo.png" style="max-width: 40px; margin-top: -10px;">
+                    </a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/">PLAN</a></li>
+                        <li ><a href="/readinglist">READING LIST</a></li>
+                        <li ><a href="/styles">STYLE</a></li>
+                        <li ><a href="/people">TEAM</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                {{template "body" .Data}}
+            </div>
+            <hr>
+            <div class="footer container">
+                <span>© 2018, GO14 Team</span>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </body>
+</html>
