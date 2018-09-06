@@ -24,14 +24,11 @@ func Register() *mux.Router {
 	return r
 }
 
-type handlerFunc func(w http.ResponseWriter, r *http.Request)
-
-func serveMarkdown(name string) handlerFunc {
+func serveMarkdown(name string) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		b, err := ioutil.ReadFile(path.Join("content", name))
 		if err != nil {
-			w.WriteHeader(http.StatusInternalServerError)
-			w.Write([]byte(name + " not found"))
+			http.Error(w, "not found", http.StatusNotFound)
 			return
 		}
 		body := blackfriday.MarkdownCommon(b)
