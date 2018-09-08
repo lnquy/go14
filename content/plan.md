@@ -11,10 +11,11 @@
 ## Basic Level - Exercise
 | **Item**      | **Description**                                              | **Estimate** |
 | ------------- | ------------------------------------------------------------ | ------------------: |
+| Go By Example | Do all exercise at https://gobyexample.com/                  |                   1 |
 | TODO app      | Make a web TODO app using Go                                 |                   1 |
 | COIN app      | Make a web app to show price of  current cryptocurrency coins |                   1 |
 | Google Search | Make an app to simulate Google   Search (web, images, news,…) |                   1 |
-|               |                                                              |          **3 days** |
+|               |                                                              |          **4 days** |
 
 ## Medium Level
 | **Item**             | **Description**                                              | **Estimate** |
