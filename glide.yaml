@@ -1,0 +1,6 @@
+package: github.com/golovers/go14
+import:
+- package: github.com/gorilla/mux
+  version: ^1.6.2
+- package: github.com/russross/blackfriday
+  version: ^1.5.1
