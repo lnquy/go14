@@ -10,7 +10,7 @@ import (
 	"github.com/russross/blackfriday"
 )
 
-// Register registers all nescessary handlers and return a router.
+// Register registers all necessary handlers and return a router.
 func Register() *mux.Router {
 	r := mux.NewRouter()
 

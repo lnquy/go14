@@ -1,17 +1,47 @@
-body{
-    font-family:"Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
+body {
+    font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
 }
-body { padding-top: 70px; }
-table, td, th {    
+
+body {
+    padding-top: 70px;
+}
+
+table, td, th {
     border: 1px solid #ddd;
     text-align: left;
 }
+
 table {
     border-collapse: collapse;
-    width: 100%;
+    table-layout: fixed;
+    width: 100% !important;
 }
+
 th, td {
     padding: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+li, p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.content {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 769px) {
+    .content {
+        padding: 0 5px;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .icon-github {
