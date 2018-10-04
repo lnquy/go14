@@ -19,6 +19,7 @@ func Register() *mux.Router {
 	r.Path("/readinglist").Methods("GET").HandlerFunc(serveMarkdown("reading.md"))
 	r.Path("/styles").Methods("GET").HandlerFunc(serveMarkdown("style.md"))
 	r.Path("/people").Methods("GET").HandlerFunc(serveMarkdown("people.md"))
+	r.Path("/guide").Methods("GET").HandlerFunc(serveMarkdown("GoLearningGuide.md"))
 
 	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
 	return r
